@@ -1,1 +1,1 @@
-# DrapeNet
+# DrapeNet: Garment Generation and Self-Supervised Draping
