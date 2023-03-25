@@ -1,6 +1,7 @@
 # DrapeNet: Garment Generation and Self-Supervised Draping
-working on it.
+<p align="center"><img src="figs/drapenet.png"></p>
 
+This is the repo for [**DrapeNet: Garment Generation and Self-Supervised Draping**](https://liren2515.github.io/page/drapenet/drapenet.html).
 
 Environment:
 * Ubuntu 20.04
@@ -27,6 +28,8 @@ cd meshudf
 source setup.sh
 ```
 
+Download the female SMPL model from http://smplify.is.tue.mpg.de/ and place `basicModel_f_lbs_10_207_0_v1.0.0.pkl` in the folder of `./smpl_pytorch`.
+
 ## Encoder-Decoder:
 ```
 cd encdec
@@ -43,3 +46,22 @@ python3 create_dset.py
 python3 compute_weights.py
 python3 edit.py
 ```
+
+## Draping:
+```
+cd draping
+python3 drape.py
+```
+
+## Citation
+If you find our work useful, please cite it as:
+```
+@inproceedings{de2023drapenet,
+  author = {De Luigi, Luca and Li, Ren and Guillard, Benoit and Salzmann, Mathieu and Fua, Pascal},
+  title = {{DrapeNet: Garment Generation and Self-Supervised Draping}},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year = {2023}
+}
+```
+
+Our work is built upon [MeshUDF](https://github.com/cvlab-epfl/MeshUDF). If you find it helpful, please cite it properly.
