@@ -1,0 +1,10 @@
+dset:
+  train_ids_file: /path/to/train-ids.pkl
+  root: /path/to/dataset/with/preprocessed/udf
+  category: "@OPTIONS(top;bottom)"
+  tposed_body_mesh: /path/to/tposed/body.obj
+
+out_file: /path/to/out/file
+num_samples: [50, 50]
+classes: ["short", "long"]
+keys: [83, 76] # S, L -> https://www.glfw.org/docs/latest/group__keys.html

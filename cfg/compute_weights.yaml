@@ -1,0 +1,8 @@
+dset:
+  classification_file: /path/to/classification/file
+  classes: ["short", "long"]
+  train_latent_codes: /path/to/train/latent/codes.pt
+  train_ids_file: /path/to/train-ids.pkl
+  category: "@OPTIONS(top;bottom)"
+
+weights_file: /path/to/out/file

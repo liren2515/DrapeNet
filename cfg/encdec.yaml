@@ -1,0 +1,19 @@
+dset:
+  train_ids_file: /path/to/train-ids.pkl
+  test_ids_file: /path/to/test-ids.pkl
+  root: /path/to/dataset/with/preprocessed/udf
+  category: "@OPTIONS(top;bottom)"
+
+num_points_pcd: 10_000
+udf_max_dist: 0.1
+latent_size: 32
+num_points_forward: 20_000
+
+decoder:
+  hidden_dim: 512
+  num_hidden_layers: 5
+
+train_bs: 4
+val_bs: 4
+lr: 1e-4
+num_epochs: 4_000

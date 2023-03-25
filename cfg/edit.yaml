@@ -1,0 +1,17 @@
+dset:
+  test_ids_file: /path/to/test-ids.pkl
+  root: /path/to/dataset/with/preprocessed/udf
+  category: "@OPTIONS(top;bottom)"
+  weights_file: /path/to/weights/file
+
+encdec_ckpt_path: /path/to/encdec/ckpt/path
+num_points_pcd: 10_000
+latent_size: 32 
+udf_max_dist: 0.1
+decoder:
+  hidden_dim: 512
+  num_hidden_layers: 5
+
+num_steps: 10
+step_size: -0.3
+required_garment_id: "00333"
