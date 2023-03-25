@@ -64,4 +64,4 @@ If you find our work useful, please cite it as:
 }
 ```
 
-Our work is built upon [MeshUDF](https://github.com/cvlab-epfl/MeshUDF). If you find it helpful, please cite it properly.
+Our work is built upon [MeshUDF](https://github.com/cvlab-epfl/MeshUDF). If you find it helpful, please cite it properly as well.
