@@ -1,0 +1,9 @@
+__pycache__/
+cub-1.10.0/
+meshudf/__pycache__/
+meshudf/_marching_cubes_lewiner_cy.cpp
+meshudf/_marching_cubes_lewiner_cy.cpython-38-x86_64-linux-gnu.so
+meshudf/build/
+models/__pycache__/
+output/
+smpl_pytorch/__pycache__/
