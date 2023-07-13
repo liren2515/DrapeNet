@@ -28,7 +28,19 @@ cd meshudf
 source setup.sh
 ```
 
-Download the female SMPL model from http://smplify.is.tue.mpg.de/ and place `basicModel_f_lbs_10_207_0_v1.0.0.pkl` in the folder of `./smpl_pytorch`.
+OR use a `Dockerfile` to create a docker image by:
+
+```
+cd docker/ && docker build -t drapenet . && cd ..
+```
+
+Run the container by:
+
+```
+docker run -it --rm --gpus all --shm-size=8gb --name drapenet drapenet
+```
+
+Finally, download the female SMPL model from http://smplify.is.tue.mpg.de/ and place `basicModel_f_lbs_10_207_0_v1.0.0.pkl` in the folder of `./smpl_pytorch`.
 
 ## Encoder-Decoder:
 ```
