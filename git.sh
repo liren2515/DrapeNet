@@ -3,11 +3,13 @@
 urle () { [[ "${1}" ]] || return 1; local LANG=C i x; for (( i = 0; i < ${#1}; i++ )); do x="${1:i:1}"; [[ "${x}" == [a-zA-Z0-9.~-] ]] && echo -n "${x}" || printf '%%%02X' "'${x}"; done; echo; }
 
 echo -e "\nEnter your name and email to configure Git"
-read -p "Your name:" name
+read -p "Your first name:" firstname
+read -p "You last name:" lastname
 read -p "Email:" email
-name=$(urle $name)
+firstname=$(urle $firstname)
+lastname=$(urle $lastname)
 email=$(urle $email)
 
-git config --global user.name "$name"
+git config --global user.name "$first $lastname"
 git config --global user.email $email 
 
