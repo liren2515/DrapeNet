@@ -10,6 +10,6 @@ firstname=$(urle $firstname)
 lastname=$(urle $lastname)
 email=$(urle $email)
 
-git config --global user.name "$first $lastname"
+git config --global user.name "$firstname $lastname"
 git config --global user.email $email 
 
