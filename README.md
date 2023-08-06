@@ -54,6 +54,8 @@ Once inside the docker container, download and extract the SMPL model from http:
 bash download_smpl.sh
 ```
 
+**We would like to thank [Kristijan Bartol](https://github.com/kristijanbartol) for the contribution of this installation setup.**
+
 ## Encoder-Decoder:
 ```
 cd encdec
