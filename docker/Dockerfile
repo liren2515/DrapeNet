@@ -38,7 +38,7 @@ RUN pip install \
 	chumpy
 
 RUN cd /tmp/ \
-	&& git clone https://github.com/kristijanbartol/DrapeNet.git \
+	&& git clone https://github.com/liren2515/DrapeNet.git \
 	&& cd DrapeNet/meshudf/ \
 	&& python setup.py build_ext --inplace \
 	&& mv /tmp/DrapeNet/ /DrapeNet/
