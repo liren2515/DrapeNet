@@ -9,6 +9,8 @@ Environment:
 * PyTorch 1.13.1 w/ CUDA 11.7
 
 ## Setup:
+
+### Option I: Using virtualenv
 ```
 python3 -m venv .venv
 source .venv/bin/activate
@@ -28,7 +30,29 @@ cd meshudf
 source setup.sh
 ```
 
-Download the female SMPL model from http://smplify.is.tue.mpg.de/ and place `basicModel_f_lbs_10_207_0_v1.0.0.pkl` in the folder of `./smpl_pytorch`.
+Download and extract the SMPL model from http://smplify.is.tue.mpg.de/ and place `basicModel_f_lbs_10_207_0_v1.0.0.pkl` in the folder of `./smpl_pytorch` manually or:
+
+```
+bash download_smpl.sh
+```
+
+### Option II: Using docker
+
+```
+cd docker/ && docker build -t drapenet . && cd ..
+```
+
+Run the container by:
+
+```
+docker run -it --rm --gpus all --shm-size=8gb --name drapenet drapenet
+```
+
+Once inside the docker container, download and extract the SMPL model from http://smplify.is.tue.mpg.de/ and place `basicModel_f_lbs_10_207_0_v1.0.0.pkl` in the folder of `./smpl_pytorch` manually or:
+
+```
+bash download_smpl.sh
+```
 
 ## Encoder-Decoder:
 ```
