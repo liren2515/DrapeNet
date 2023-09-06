@@ -64,6 +64,7 @@ python3 train_encdec.py  # add </path/to/run/cfg/file> to restore training
 python3 export_codes.py </path/to/run/cfg/file>
 python3 export_meshes.py </path/to/run/cfg/file>
 ```
+The mesh data for the training of Encoder-Decoder can be downloaded from [here](https://drive.google.com/file/d/1SIY9X1g_N-j7Vm47fowiiqTe5gIsCUEV/view?usp=sharing). Note that we preprocess the orignal meshes of CLOTH3D to drape them on the female body with neutral shape.
 
 ## Editing:
 ```
